@@ -6,9 +6,9 @@ function NikitaReytov($a, $b, $c) {
         return "Треугольник не существует.";
     }
 
-    if ($a == $b && $b == $c) {
+    if ($a === $b && $b === $c) {
         return "Треугольник равносторонний.";
-    } elseif ($a == $b || $a == $c || $b == $c) {
+    } elseif ($a === $b || $a === $c || $b === $c) {
         return "Треугольник равнобедренный.";
     } else {
         return "Треугольник разносторонний.";
@@ -24,4 +24,3 @@ if ($a <= 0 || $b <= 0 || $c <= 0) {
 } else {
     echo NikitaReytov($a, $b, $c) . "\n";
 }
-?>
